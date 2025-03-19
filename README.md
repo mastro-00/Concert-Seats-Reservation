@@ -1,5 +1,6 @@
 # Exam #3: "Concert Seats"
-## Student: Mastrorocco Flavio 
+## Student: Mastrorocco Flavio
+**Exam Assignment**: Design and implement a web application to reserve seats at a set of concerts held in theatres. The project must be implemented as a React application that interacts with an HTTP API server implemented in Node+Express. The database must be stored in an SQLite file. User authentication and API access must be with Passport.js and session cookies.
 
 ## React Client Application Routes
 
