@@ -1,0 +1,155 @@
+.center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.tickets {
+    width: 800px;
+    height: fit-content;
+    border: 0.4mm solid rgba(0, 0, 0, 0.08);
+    border-radius: 3mm;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: poppins;
+    max-height: 96vh;
+    overflow: auto;
+    background: white;
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.ticket-selector {
+    background: rgb(243, 243, 243);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.seats {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 150px;
+    position: relative;
+}
+
+.status {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.item {
+    font-size: 14px;
+    margin-left: 8px;
+    position: relative;
+}
+
+.item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translate(0, -50%);
+    width: 11px;
+    height: 11px;
+    background: rgb(100, 200, 100);
+    outline: 0.2mm solid black;
+    border-radius: 0.3mm;
+}
+
+.item:nth-child(2)::before {
+    background: rgb(240, 100, 100);
+    outline: 0.2mm solid black;
+}
+
+.item:nth-child(3)::before {
+    background: yellow;
+    outline: 0.2mm solid black;
+}
+
+.all-seats {
+    display: grid;
+    /* grid-template-columns: repeat(5, 1fr); */
+    grid-gap: 15px;
+    margin: 15px 0;
+    margin-top: 20px;
+    position: relative;
+}
+
+.seat {
+    width: 28px;
+    height: 28px;
+    background: rgb(100, 200, 100);
+    border-radius: 0.5mm;
+    outline: 0.2mm solid black;
+    cursor: default;
+}
+
+.all-seats input:checked+label {
+    background: yellow;
+    outline: 0.2mm solid black;
+}
+
+.seat.booked {
+    background: rgb(240, 100, 100);
+    outline: 0.2mm solid black;
+}
+
+
+.price {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.total span {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.price button {
+    background: rgb(60, 60, 60);
+    color: white;
+    font-family: poppins;
+    font-size: 14px;
+    padding: 7px 14px;
+    border-radius: 2mm;
+    outline: none;
+    border: none;
+}
